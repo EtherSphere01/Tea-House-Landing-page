@@ -21,13 +21,17 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- Main Content -->
+     
     <main class="max-w-screen-xl mx-auto px-5">
       <!-- Header -->
       <header class="lg:flex pt-10 mb-20 gap-20">
@@ -307,5 +311,85 @@
         </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="bg-orange-100 text-gray-700 py-10 px-4">
+      <div class="w-9/12 mx-auto">
+        <!-- logo -->
+        <div class="mb-8 flex justify-between">
+          <img src="./tea-house-resources/images/cup.png" alt="" class="mb-8" />
+          <div class="flex items-center gap-5">
+            <h4 class="">Ready to get strated?</h4>
+            <button
+              class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-2 rounded-lg text-white font-bold"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- links -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- first col -->
+          <div>
+            <h4 class="font-bold mb-3 text-2xl">Quick Links</h4>
+            <ul class="mt-2 space-y-3">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Insurance</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-3 text-2xl">Our Service</h4>
+            <ul class="mt-2 space-y-3">
+              <li>Life Insurance</li>
+              <li>Car Insurance</li>
+              <li>Health Insurance</li>
+              <li>House Insurance</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-3 text-2xl">Help</h4>
+            <ul class="mt-2 space-y-3">
+              <li>FAQs</li>
+              <li>Insurance</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-3.5 text-4xl">
+              Subscribe to our newsletter
+            </h4>
+            <input
+              type="text"
+              placeholder="Email address"
+              class="md:w-4/6 bg-transparent border-b-2 border-gray-600 px-3 py-2"
+            />
+            <button>
+              <i
+                class="fa-solid fa-chevron-right bg-orange-600 md:h-10 md:w-10 w-7 h-7 md:rounded-full text-white inline-flex items-center justify-center md:pt-3 pt-1.5 ml-18 mt-1 rounded-xl"
+              ></i>
+            </button>
+
+            <!-- icon -->
+            <div
+              class="flex md:justify-self-end justify-self-auto w-3/5 mb-2 mt-9"
+            >
+              <i class="fa-brands fa-facebook text-2xl"></i>
+              <i class="fa-brands fa-twitter text-2xl ml-5"></i>
+              <i class="fa-brands fa-instagram text-2xl ml-5"></i>
+              <i class="fa-brands fa-linkedin text-2xl ml-5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-4 md:col-span-4 justify-center">
+        <p>&copy; 2021 The Tea House. All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
